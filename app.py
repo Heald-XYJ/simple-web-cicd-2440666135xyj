@@ -70,4 +70,4 @@ def health():
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080, debug=True)
 
-feat: v1.0 新增个人姓名学号
+
