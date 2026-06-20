@@ -56,6 +56,9 @@ def index():
         hostname=socket.gethostname(),
         deploy_time=datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         environment="Production" if app.config.get("ENV") == "production" else "Development",
+        student_name="肖悦君",
+        student_id="2440666135",
+        app_version="v1.0"
     )
 
 
@@ -66,3 +69,5 @@ def health():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080, debug=True)
+
+feat: v1.0 新增个人姓名学号
